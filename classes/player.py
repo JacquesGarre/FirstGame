@@ -53,12 +53,13 @@ class Player:
 
             # Change velocity
             self.v = self.v - 1
-
+    
             # If ground is reached, reset variables.
             if self.y >= 540:
                 self.y = 540
                 self.isjump = 0
-                self.v = 8              
+                self.v = 8 
+        return self.y             
           
 
 
